@@ -1,0 +1,164 @@
+body;
+html{
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body{
+    margin: 0;
+}
+
+#menu_background{
+    background: url(produktion/Titel.svg);
+}
+
+/** SPILLESKÆRM **/
+#game_background{
+    background: url(produktion/spilscreen.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+#bums1 {
+    background: url(produktion/Bumser.svg);
+    position: absolute;
+    background-size: 50%;
+    height: 10vh;
+    width: 10vw;
+    background-repeat: no-repeat;
+    top: 20vw;
+    left: 20vw;
+}
+
+#bums2 {
+    background: url(produktion/Bumser.svg);
+    position: absolute;
+    background-size: 50%;
+    height: 10vh;
+    width: 10vw;
+    background-repeat: no-repeat;
+    top: 30vw;
+    left: 45vw;
+}
+#bums3 {
+    background: url(produktion/Bumser.svg);
+    position: absolute;
+    background-size: 50%;
+    height: 10vh;
+    width: 10vw;
+    background-repeat: no-repeat;
+    top: 23vw;
+    left: 70vw;
+}
+
+#hudorm1 {
+    background: url(produktion/Hudorm.svg);
+    position: absolute;
+    background-size: 50%;
+    height: 10vh;
+    width: 10vw;
+    background-repeat: no-repeat;
+    top: 20vw;
+    left: 46vw;
+}
+#hudorm2 {
+    background: url(produktion/Hudorm.svg);
+    position: absolute;
+    background-size: 50%;
+    height: 10vh;
+    width: 10vw;
+    background-repeat: no-repeat;
+    top: 35vw;
+    left: 31vw;
+}
+#hudorm3 {
+    background: url(produktion/Hudorm.svg);
+    position: absolute;
+    background-size: 50%;
+    height: 10vh;
+    width: 10vw;
+    background-repeat: no-repeat;
+    top: 20vw;
+    left: 80vw;
+}
+
+#vorte1 {
+    background: url(produktion/Vorte.svg);
+    position: absolute;
+    background-size: 50%;
+    height: 10vh;
+    width: 10vw;
+    background-repeat: no-repeat;
+    top: 30vw;
+    left: 70vw;
+}
+
+#vorte2 {
+    background: url(produktion/Vorte.svg);
+    position: absolute;
+    background-size: 50%;
+    height: 10vh;
+    width: 10vw;
+    background-repeat: no-repeat;
+    top: 30vw;
+    left: 17vw;
+}
+
+#vorte3 {
+    background: url(produktion/Vorte.svg);
+    position: absolute;
+    background-size: 50%;
+    height: 10vh;
+    width: 10vw;
+    background-repeat: no-repeat;
+    top: 20vw;
+    left: 27vw;
+}
+#points {
+    background: url(produktion/Point.svg);
+    position: absolute;
+    background-size: 50%;
+    height: 30vh;
+    width: 30vw;
+    background-repeat: no-repeat;
+    top: 1vw;
+    left: 1vw;
+}
+#energy {
+    background: url(produktion/Liv.svg);
+    position: absolute;
+    background-size: 80%;
+    height: 20vh;
+    width: 20vw;
+    background-repeat: no-repeat;
+    top: 38vw;
+    left: 1vw;
+}
+#time {
+    background: url(produktion/Tid.svg);
+    position: absolute;
+    background-size: 80%;
+    height: 20vh;
+    width: 10vw;
+    background-repeat: no-repeat;
+    top: 1vw;
+    left: 90vw;
+}
+#setting {
+    background: url(produktion/Indstillinger.svg);
+    position: absolute;
+    background-size: 80%;
+    height: 15vh;
+    width: 10vw;
+    background-repeat: no-repeat;
+    top: 39vw;
+    left: 90vw;
+}
+
+
+
