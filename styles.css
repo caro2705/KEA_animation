@@ -1,55 +1,65 @@
-body;
-html{
-    margin: 0;
-    height: 100%;
-    overflow: hidden;
-}
-
-body{
-    margin: 0;
-}
-
-#menu_background{
+#menu_background {
     background: url(produktion/Titel.svg);
-}
-
-/** SPILLESKÆRM **/
-#game_background{
-    background: url(produktion/spilscreen.svg);
-    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-
-    height: 100vh;
+    top: 0;
+    left: 0;
+    height: 100vw;
     width: 100vw;
+    background-size: 100%;
 }
 
+.start {
+    animation-name: start_kf;
+    display: none;
+}
+
+
+/********************* SPILLESKÆRM *****************/
+
+#screen {
+    position: relative;
+    width: 100vw;
+    height: 56.23vw;
+}
+
+#game_background {
+    background: url(produktion/spilscreen.svg);
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    height: 100vw;
+    width: 100vw;
+    background-size: 100%;
+}
+
+/********************* Figurer *****************/
 #bums1 {
     background: url(produktion/Bumser.svg);
     position: absolute;
     background-size: 50%;
-    height: 10vh;
+    height: 10vw;
     width: 10vw;
     background-repeat: no-repeat;
-    top: 20vw;
-    left: 20vw;
+    top: 33vw;
+    left: 30vw;
 }
 
 #bums2 {
     background: url(produktion/Bumser.svg);
     position: absolute;
     background-size: 50%;
-    height: 10vh;
+    height: 5vw;
     width: 10vw;
     background-repeat: no-repeat;
-    top: 30vw;
-    left: 45vw;
+    top: 40vw;
+    left: 50vw;
 }
+
 #bums3 {
     background: url(produktion/Bumser.svg);
     position: absolute;
     background-size: 50%;
-    height: 10vh;
+    height: 10vw;
     width: 10vw;
     background-repeat: no-repeat;
     top: 23vw;
@@ -60,52 +70,54 @@ body{
     background: url(produktion/Hudorm.svg);
     position: absolute;
     background-size: 50%;
-    height: 10vh;
+    height: 5vw;
     width: 10vw;
     background-repeat: no-repeat;
-    top: 20vw;
+    top: 30vw;
     left: 46vw;
 }
+
 #hudorm2 {
     background: url(produktion/Hudorm.svg);
     position: absolute;
     background-size: 50%;
-    height: 10vh;
+    height: 5vw;
     width: 10vw;
     background-repeat: no-repeat;
-    top: 35vw;
-    left: 31vw;
+    top: 40vw;
+    left: 20vw;
 }
+
 #hudorm3 {
     background: url(produktion/Hudorm.svg);
     position: absolute;
     background-size: 50%;
-    height: 10vh;
+    height: 10vw;
     width: 10vw;
     background-repeat: no-repeat;
-    top: 20vw;
-    left: 80vw;
+    top: 40vw;
+    left: 70vw;
 }
 
 #vorte1 {
     background: url(produktion/Vorte.svg);
     position: absolute;
     background-size: 50%;
-    height: 10vh;
+    height: 10vw;
     width: 10vw;
     background-repeat: no-repeat;
     top: 30vw;
-    left: 70vw;
+    left: 60vw;
 }
 
 #vorte2 {
     background: url(produktion/Vorte.svg);
     position: absolute;
     background-size: 50%;
-    height: 10vh;
+    height: 10vw;
     width: 10vw;
     background-repeat: no-repeat;
-    top: 30vw;
+    top: 23vw;
     left: 17vw;
 }
 
@@ -113,52 +125,123 @@ body{
     background: url(produktion/Vorte.svg);
     position: absolute;
     background-size: 50%;
-    height: 10vh;
+    height: 10vw;
     width: 10vw;
     background-repeat: no-repeat;
     top: 20vw;
-    left: 27vw;
+    left: 80vw;
 }
+
 #points {
     background: url(produktion/Point.svg);
     position: absolute;
     background-size: 50%;
-    height: 30vh;
+    height: 15vw;
     width: 30vw;
     background-repeat: no-repeat;
     top: 1vw;
     left: 1vw;
 }
+
 #energy {
     background: url(produktion/Liv.svg);
     position: absolute;
     background-size: 80%;
-    height: 20vh;
+    height: 10vw;
     width: 20vw;
     background-repeat: no-repeat;
-    top: 38vw;
+    top: 48vw;
     left: 1vw;
 }
+
 #time {
     background: url(produktion/Tid.svg);
     position: absolute;
     background-size: 80%;
-    height: 20vh;
+    height: 10vw;
     width: 10vw;
     background-repeat: no-repeat;
     top: 1vw;
     left: 90vw;
 }
-#setting {
+
+
+/********************** Indstillinger ************************/
+
+#indstillinger {
     background: url(produktion/Indstillinger.svg);
     position: absolute;
-    background-size: 80%;
-    height: 15vh;
+    background-size: 100%;
+    height: 10vw;
     width: 10vw;
     background-repeat: no-repeat;
-    top: 39vw;
+    top: 45vw;
     left: 90vw;
 }
 
+#settings {
+    background: url(produktion/Setting.svg);
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    height: 100vw;
+    width: 100vw;
+    background-size: 100%;
+}
 
+.fade {
+    animation-name: fade_kf;
+    display: none;
+}
 
+@keyframes fade_kf {
+    0% {}
+
+    100 {}
+}
+
+/******************* Game Over *********************/
+#gameover {
+    background: url(produktion/Slutscreen.svg);
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    height: 100vw;
+    width: 100vw;
+    background-size: 100%
+}
+
+.slut {
+    animation-name: slut_kf;
+    display: none;
+
+}
+
+@keyframes fade_kf {
+    0% {}
+
+    100 {}
+}
+
+/******************* Level Complete *********************/
+#levelcomplete {
+    background: url(produktion/Slutscreen_vinder.svg);
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    height: 100vw;
+    width: 100vw;
+    background-size: 100%
+}
+
+.vind {
+    animation-name: vind_kf;
+    display: none;
+
+}
+
+@keyframes vind_kf {
+    0% {}
+
+    100 {}
+}
